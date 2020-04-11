@@ -91,3 +91,42 @@ body {
   #linechart{
     height: 480px;
   }
+
+  .red {
+    background-color:lightcoral !important;
+  }
+
+  .green {
+    background-color: lightgreen !important;
+  }
+
+  .orange {
+    background-color: orange !important;
+  }
+
+  div.card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #f9f9f9;
+    padding: 5px 5px;
+    /* text-align: center; */
+ }
+
+ div.card2 {
+    /* width: 250px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #f9f9f9;
+    /* padding: 20px 20px; */
+    /* text-align: center; */
+ }
+
+
+ .pagination .page-item.active .page-link { background-color: #000; }
+
+ div.dataTables_wrapper div.dataTables_paginate ul.pagination .page-item.active .page-link:focus {
+ background-color: #000;
+ }
+ 
+ .pagination .page-item.active .page-link:hover {
+ background-color: #000;
+ }
