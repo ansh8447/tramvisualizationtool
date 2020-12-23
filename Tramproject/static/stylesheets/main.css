@@ -40,11 +40,23 @@ body {
     line-height: 1.5;
   }
 
+  /* Maps */
+
+  /* Physical Map */
+  #mapid { height: 640px; } 
+  
+  /* CyberPhysical Map */
+  #overview-map { height: 400px; }
+  
+  /* Cyber Map */
+  #cyber-map {height: 500px; }
+
+
+
   .features {
-    /* margin: 4em auto; */
-    /* padding: 1em; */
     position: relative;
   }
+
   .feature-title {
     color: rgb(230, 218, 218);
     font-size: 1.3rem;
@@ -54,12 +66,6 @@ body {
     text-align: center;
     margin-top: 20px; 
   }
-  /* .features img {
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
-  } */
 
   .with-margin{
     margin-bottom: 5px;
@@ -82,7 +88,6 @@ body {
     margin-bottom: 30px;
     text-align: center;
   }
-  #mapid { height: 480px; }
 
   .table th {
     text-align: center;
@@ -105,17 +110,20 @@ body {
   }
 
   div.card {
+    /* width: 100%; */
     width: 100%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: #f9f9f9;
     padding: 5px 5px;
+    color: white;
     /* text-align: center; */
  }
 
  div.card2 {
     /* width: 250px; */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background: #f9f9f9;
+    color: white;
     /* padding: 20px 20px; */
     /* text-align: center; */
  }
@@ -130,3 +138,68 @@ body {
  .pagination .page-item.active .page-link:hover {
  background-color: #000;
  }
+
+ .text-info{
+   color: #f9f9f9 !important;
+ }
+
+
+ .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+   color: white;
+   background-color: #17293d;
+   font-weight: bold !important;
+ }
+
+ .nav-pills .nav-link, .nav-pills .show>.nav-link {
+  color: rgb(0, 0, 0);
+  background-color: #d0d4d8;
+  font-weight: bold !important;
+}
+
+.align-middle{
+  text-align: center; margin-top: 5px; margin-bottom: 0px;
+}
+
+  /* progress::-webkit-progress-value { background: red; } */
+
+  #progressred::-webkit-progress-value {
+    background:rgb(240, 8, 8);
+  }
+
+  #progressgreen::-webkit-progress-value { 
+    background: green; 
+  }
+
+  #progressorange::-webkit-progress-value { 
+    background: orange; 
+  }
+
+
+.progress:before {
+  content:attr(data-text);
+  position:absolute;
+  left:0;
+  right:0;
+  color: white;
+  
+}
+
+.progress {
+ text-align:center;
+ display:inline-block;
+ position:relative;
+}
+
+/* span{   */
+  /* position: absolute; */
+  /* top: -2px;
+  left: 50%;
+  font-size: 12px;
+} */
+
+
+/* Removing extra space between the table and pagination index */
+div.dataTables_wrapper div.dataTables_info {
+  padding-top: 0em;
+  height: 0em;
+}
